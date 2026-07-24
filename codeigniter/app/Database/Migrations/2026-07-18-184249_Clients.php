@@ -26,11 +26,11 @@ class Clients extends Migration
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->createTable('invitados');
+        $this->forge->createTable('clients');
     }
 
     public function down()
     {
-        $this->forge->dropTable('invitados');
+        $this->forge->dropTable('clients');
     }
 }
