@@ -1,0 +1,32 @@
+# Entorno y Configuración Sensible
+.env
+.env.*
+!.env.example
+
+# Dependencias (se gestionan con Composer)
+/vendor/
+
+# Archivos temporales y Logs de CI4
+/writable/cache/*
+/writable/debugbar/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+!/writable/cache/index.html
+!/writable/debugbar/index.html
+!/writable/logs/index.html
+!/writable/session/index.html
+!/writable/uploads/index.html
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Archivos del SO
+.DS_Store
+Thumbs.db
