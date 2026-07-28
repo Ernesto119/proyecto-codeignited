@@ -13,3 +13,12 @@ RUN a2enmod rewrite
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+
+COPY codeigniter/ /var/www/html/
+
+# 2. Ajustar permisos a la carpeta writable
+RUN chown -R www-data:www-data /var/www/html/writable
+
+WORKDIR /var/www/html
+
+EXPOSE 80
