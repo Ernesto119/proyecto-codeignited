@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        return redirect()->to('/clients');
+        return redirect()->to('/productos');
     }
 }
