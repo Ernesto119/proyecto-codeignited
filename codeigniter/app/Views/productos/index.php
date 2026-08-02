@@ -38,7 +38,7 @@
                     </tr>
                 <?php endforeach; ?>
                 <div class="mt-4 alert alert-info">
-                    <strong>Uso de la API:</strong> puedes consultar los productos en <code>/api/productos</code> con GET o /api/productos/{id} para consultar 1 en especifico, crear nuevos con POST y editar o eliminar con PUT/DELETE escribiendo /api/productos/{id}.
+                    <strong>Uso de la API:</strong> puedes consultar los productos GET <code>/api/productos/</code> con GET <code>/api/productos/{id}</code> para consultar 1 en especifico, crear nuevos con POST <code>api/productos</code>y editar o eliminar con PUT/DELETE escribiendo /api/productos/{id}.
                 </div>
             </tbody>
         </table>
